@@ -10,6 +10,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PInvokeSample", "PInvokeSam
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeProject", "NativeProject\NativeProject.vcxproj", "{E12126E1-AD18-4B5B-9956-4FF1AAB9C269}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InteropProject", "InteropProject\InteropProject.vcxproj", "{73A22E94-2856-496C-A09C-4D61BA3528BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E12126E1-AD18-4B5B-9956-4FF1AAB9C269} = {E12126E1-AD18-4B5B-9956-4FF1AAB9C269}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteropDependencies", "InteropDependencies\InteropDependencies.csproj", "{2D0F2B21-E46C-43AC-A096-ABA103E38189}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -24,6 +31,14 @@ Global
 		{E12126E1-AD18-4B5B-9956-4FF1AAB9C269}.Debug|x64.Build.0 = Debug|x64
 		{E12126E1-AD18-4B5B-9956-4FF1AAB9C269}.Release|x64.ActiveCfg = Release|x64
 		{E12126E1-AD18-4B5B-9956-4FF1AAB9C269}.Release|x64.Build.0 = Release|x64
+		{73A22E94-2856-496C-A09C-4D61BA3528BA}.Debug|x64.ActiveCfg = Debug|x64
+		{73A22E94-2856-496C-A09C-4D61BA3528BA}.Debug|x64.Build.0 = Debug|x64
+		{73A22E94-2856-496C-A09C-4D61BA3528BA}.Release|x64.ActiveCfg = Release|x64
+		{73A22E94-2856-496C-A09C-4D61BA3528BA}.Release|x64.Build.0 = Release|x64
+		{2D0F2B21-E46C-43AC-A096-ABA103E38189}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2D0F2B21-E46C-43AC-A096-ABA103E38189}.Debug|x64.Build.0 = Debug|Any CPU
+		{2D0F2B21-E46C-43AC-A096-ABA103E38189}.Release|x64.ActiveCfg = Release|Any CPU
+		{2D0F2B21-E46C-43AC-A096-ABA103E38189}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
