@@ -16,7 +16,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -98,6 +98,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InteropDependencies\InteropDependencies.csproj">
+      <Project>{2D0F2B21-E46C-43AC-A096-ABA103E38189}</Project>
+      <Name>InteropDependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InteropProject\InteropProject.vcxproj">
+      <Project>{73a22e94-2856-496c-a09c-4d61ba3528ba}</Project>
+      <Name>InteropProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

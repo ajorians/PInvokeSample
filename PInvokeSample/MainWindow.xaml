@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PInvokeSample"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -11,9 +10,18 @@
          <RowDefinition Height="50" />
          <RowDefinition Height="50" />
       </Grid.RowDefinitions>
-      <Button Grid.Row="0"
-              Content="Test"
-              Command="{Binding TestClicked, Mode=OneTime}" />
+      <Grid>
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+         </Grid.ColumnDefinitions>
+         <Button Grid.Column="0"
+                 Content="Decrement"
+                 Command="{Binding DecrementClicked, Mode=OneTime}" />
+         <Button Grid.Column="1"
+                 Content="Increment"
+                 Command="{Binding IncrementClicked, Mode=OneTime}" />
+      </Grid>
       <Label Grid.Row="1"
              Content="{Binding CountStr, Mode=OneWay}" />
    </Grid>
